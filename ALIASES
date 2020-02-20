@@ -1,0 +1,7 @@
+alias create_env="virtualenv -p python3 ./venv"
+alias install_deps="source ./venv/bin/activate; pip3 install -r requirements.txt"
+alias activate_env="source ./venv/bin/activate"
+
+alias tasks_push='git add .task/*.data; git commit -m "Tasks updated @ $(date)"; git push origin master'
+alias new_env='virtualenv -p python3 ./venv; source ./venv/bin/activate; pip3 install -r requirements.txt'
+

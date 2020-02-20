@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Вопросы по теме</title>
+</head>
+<body>
+
+    <h1>Название темы</h1>
+
+    {% for question in question_list %}
+        <h3>Тема: {{ question.topic }} </h3>
+        <p>{{ question.text }}</p>
+        <p>
+            <a href="{{ url_for('question_like', question_id=question.id) }}">+</a> 
+            {{ question.likes }} 
+            <a href="{{ url_for('question_dislike', question_id=question.id) }}">–</a>
+            {{ question.dislikes }}
+        </p>
+        <br>
+    {% endfor %}
+    <a href="">Задать вопрос</a>
+    <a href="">Назад</a>
+
+</body>
+</html>

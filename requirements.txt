@@ -1,0 +1,5 @@
+Flask
+Flask-SQLAlchemy
+Flask-Scss
+Flask-Migrate
+Flask-Script

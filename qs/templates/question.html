@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+</head>
+
+<body>
+    <form action="{{ url_for('question_add') }}" method="post">
+        <label for="author">Автор:</label>
+        <br>
+        <input type="text" name="author" placeholder="Введите адрес эл.почты">
+        <br>
+        <label for="topic">Тема:</label>
+        <br>
+        <input type="text" name="topic" placeholder="Введите название темы">
+        <br>
+        <label for="text">Вопрос:</label>
+        <br>
+        <textarea type="text" name="text" cols=40 rows=7 placeholder="Введите вопрос"></textarea>
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+
+</html>

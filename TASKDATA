@@ -1,0 +1,3 @@
+export TASKDATA=$(pwd)/.task
+
+alias tasks_push='git add .tasks; git commit -m "Tasks updated @ $(date)"; git push origin master'
